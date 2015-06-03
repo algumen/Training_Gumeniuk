@@ -1,0 +1,44 @@
+package Sortirovka;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class Sort {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader;
+        reader = new BufferedReader(new InputStreamReader(System.in));
+        String[] b = new String[3];
+        int[] a = new int[3];
+
+        for (int i = 0; i < 3; i++) {
+            b[i] = reader.readLine();
+            a[i] = Integer.parseInt(b[i]);
+        }
+
+        for (int j = 0; j < 2; j++) {
+            for (int i = 2; i > 0; i--) {
+                if (a[i] < a[i - 1]) {
+                    int m = a[i];// swap (a[i],a[i - 1]);
+                    a[i] = a[i - 1];
+                    a[i - 1] = m;
+                }
+            }
+        }
+
+
+        for (int i = 0; i < 3; i++) System.out.println(a[i]);
+    }
+
+
+//       public static void swap(int x, int y)
+//    {
+//        int m;
+//            m = y;
+//            y = x;
+//            x = m;
+
+//    }
+
+}

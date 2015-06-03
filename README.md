@@ -1,0 +1,2 @@
+# Training_Gumeniuk
+MyFirstRepositoriy

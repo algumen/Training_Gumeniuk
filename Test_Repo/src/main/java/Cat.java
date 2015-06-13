@@ -20,32 +20,18 @@ public class Cat {
     }
 
     {
-        Cat catVaska = new Cat ("Vaska",8,12,9);
-        Cat catBarsik = new Cat ("Barsik",6,7,5);
+
     }
-
-
-
-//        catVaska.name = "Vaska";
-//        catVaska.age = 8;
-//        catVaska.weight =12;
-//        catVaska.strength = 9;
-//
-//        catBarsik.name = "Barsik";
-//        catBarsik.age = 6;
-//        catBarsik.weight =7;
-//        catBarsik.strength = 5;
-
-
-
 
 
     public boolean fight (Cat anotherCat)
     {
-//        if ((age.Cat+weight.Cat+strength.Cat)>(age.anotherCat+weight.anotherCat+strength.anotherCat))
-//            return true;
-//        else return false;
+        int agePlus = this.age > anotherCat.age ? 1 : 0;
+        int weightPlus = this.weight > anotherCat.weight ? 1 : 0;
+        int strengthPlus = this.strength > anotherCat.strength ? 1 : 0;
 
+        int score = agePlus + weightPlus + strengthPlus;
+        return score > 2;
 
         //Напишите тут ваш код
 

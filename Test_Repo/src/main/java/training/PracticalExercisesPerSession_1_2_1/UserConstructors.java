@@ -21,7 +21,7 @@ public class UserConstructors {
         Assert.assertEquals("TestPassword", parCon.getPassword());
 
 //        using copy constructor
-        User copyCon = new User(parCon copyCon);
+        User copyCon = new User(parCon);
         Assert.assertEquals(copyCon.getUsername(), parCon.getUsername());
         Assert.assertEquals(copyCon.getPassword(), parCon.getPassword());
 

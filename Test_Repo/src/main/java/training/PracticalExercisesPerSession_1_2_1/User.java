@@ -34,7 +34,7 @@ public class User {
 
     //          copy constructor
     public User(User aUser) {
-        this(aUser.getUsername(),aUser.getPassword());
+        this(aUser.getUsername(), aUser.getPassword());
 
 //        this.username = new String(copyUser.getUsername());
 //        this.password = new String(copyUser.getPassword());

@@ -35,7 +35,8 @@ public class TestCorrectEnter_1 {
         driver.findElement(By.id("password")).sendKeys("123456");
         driver.findElement(By.id("submit_btn")).click();
 
-        if (isElementPresent(By.id("tab-1090-btnInnerEl")))  //Check key element in the open page
+//      if (isElementPresent(By.id("tab-1090-btnInnerEl")))  // Alternative check
+        if (isElementPresent(By.xpath(".//*[@id='toolbar-profile']/span[contains(text(),'tt')]"))) //Check key element in the open page
             System.out.println("Test is passed");
         else System.out.println("Test is not passed");
     }
